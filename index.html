@@ -1,346 +1,116 @@
 <!DOCTYPE html>
-<html lang="gr">
+<html lang="en">
 	<head>
-		<title>Κατάστημα Ρούχων</title>
+		<!-- Title Tag  -->
+		<title>Clothes Eshop</title>
+		<!-- Meta Tag -->
 		<meta charset="UTF-8">
-        <link rel="icon" type = "image/x-icon" href ="books.jpeg">
-		<link rel="stylesheet" type="text/css" href="mystyles.css"> 
+		<!-- Favicon -->
+        <link rel="icon" type = "image/x-icon" href ="icon.jpeg">
+		<!-- StyleSheet -->
+		<link rel="stylesheet" type="text/css" href="styles.css"> 
 	</head>	
 	<body>	
 		<header>
-			<div class="logo">
-				<a href="index.html"><img src="images/logo2.png" alt="#"></a>
-			</div>
-			<h1>Κατάστημα Ρούχων</h1>
+			<!-- Logo -->
+			<a href="#"><img src="images/logo.png" alt="#">
+				<h1>Clothes Eshop</h1>
+			</a>
 		</header>
 
 		<nav>
+			<!-- Navigation Menu -->
 			<ul class="menu">
 				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="products.html">eShop</a></li>
+				<li><a href="product-categories.html">Categories</a></li>
+				<!-- Dropdown List -->
 				<ul class="dropdown">
-					<li><a href="shop-grid.html">Shop Grid</a></li>
-					<li><a href="cart.html">Cart</a></li>
-					<li><a href="checkout.html">Checkout</a></li>
+					<li><a href="products-man.html">Man</a></li>
+						<!-- Expanded List -->
+						<ul class="expanded">
+							<li><a href="products-man-tops.html">Tops</a></li>
+							<li><a href="products-man-trousers.html">Trousers</a></li>
+							<li><a href="products-man-shoes.html">Shoes</a></li>
+						</ul>
+					<li><a href="products-woman.html">Woman</a></li>
+						<!-- Expanded List -->
+						<ul class="expanded">
+							<li><a href="products-woman-tops.html">Tops</a></li>
+							<li><a href="products-woman-trousers.html">Trousers</a></li>
+							<li><a href="products-woman-shoes.html">Shoes</a></li>
+						</ul>
+					<li><a href="products-kids.html">Kids</a></li>
+						<!-- Expanded List -->
+						<ul class="expanded">
+							<li><a href="products-kids-tops.html">Tops</a></li>
+							<li><a href="products-kids-trousers.html">Trousers</a></li>
+							<li><a href="products-kids-shoes.html">Shoes</a></li>
+						</ul>
 				</ul>
-				<li><a href="page2.html">About Us</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-		</ul>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
 		</nav>
 
 
 		<main>
-			<section class="slider">
-				<img src="https://via.placeholder.com/600x370" alt="#">
-				<div class="content">
-					<h1><span>UP TO 50% OFF </span>Shirt For Man</h1>
-					<p>Maboriosam in a nesciung eget magnae <br> dapibus disting tloctio in the find it pereri <br> odiy maboriosm.</p>
-					<div class="button">
-						<a href="#" class="btn">Shop Now!</a>
-					</div>
-				</div>
-			</section>
-
-			<section class="small-banner section">
-				<div class="row">
-					<div class="single-banner">
-						<img src="https://via.placeholder.com/600x370" alt="#">
-						<div class="content">
-							<p>Man's Collectons</p>
-							<h3>Summer travel <br> collection</h3>
-							<a href="#">Discover Now</a>
-						</div>
-					</div>
-					
-					<div class="single-banner">
-						<img src="https://via.placeholder.com/600x370" alt="#">
-						<div class="content">
-							<p>Man's Collectons</p>
-							<h3>Summer travel <br> collection</h3>
-							<a href="#">Discover Now</a>
-						</div>
-					</div>
-
-					<div class="single-banner">
-						<img src="https://via.placeholder.com/600x370" alt="#">
-						<div class="content">
-							<p>Man's Collectons</p>
-							<h3>Summer travel <br> collection</h3>
-							<a href="#">Discover Now</a>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<div class="product-area section">
-				<div class="container">
-					<div class="section-title">
-						<h2>Trending Item</h2>
-					</div>
-					<div class="nav-main">
-						<!-- Tab Nav -->
-						<ul class="nav nav-tabs" id="myTab" role="tablist">
-							<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#man" role="tab">Man</a></li>
-							<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#women" role="tab">Woman</a></li>
-							<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#kids" role="tab">Kids</a></li>
-						</ul>
-						<!--/ End Tab Nav -->
-					</div>
-					<!-- Start Single Tab -->
-					<div class="tab-pane fade show active" id="man" role="tabpanel">
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-									<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Women Hot Collection</a></h3>
-								<div class="product-price">
-									<span>$29.00</span>
-								</div>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-									<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Women Hot Collection</a></h3>
-								<div class="product-price">
-									<span>$29.00</span>
-								</div>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-									<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Women Hot Collection</a></h3>
-								<div class="product-price">
-									<span>$29.00</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--/ End Single Tab -->
-					<!-- Start Single Tab -->
-					<div class="tab-pane fade show active" id="women" role="tabpanel">
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-									<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Women Hot Collection</a></h3>
-								<div class="product-price">
-									<span>$29.00</span>
-								</div>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-									<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Women Hot Collection</a></h3>
-								<div class="product-price">
-									<span>$29.00</span>
-								</div>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-									<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Women Hot Collection</a></h3>
-								<div class="product-price">
-									<span>$29.00</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--/ End Single Tab -->
-					<!-- Start Single Tab -->
-					<div class="tab-pane fade show active" id="kids" role="tabpanel">
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-									<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Women Hot Collection</a></h3>
-								<div class="product-price">
-									<span>$29.00</span>
-								</div>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-									<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Women Hot Collection</a></h3>
-								<div class="product-price">
-									<span>$29.00</span>
-								</div>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-									<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Women Hot Collection</a></h3>
-								<div class="product-price">
-									<span>$29.00</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--/ End Single Tab -->
-				</div>
-			</div>
+			
 
 			<section class="shop-services section home">
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="ti-rocket"></i>
+				
+				<figure class="single-service">
+					<img src="images/instagram.png" alt="#">
 					<h4>Free shiping</h4>
-					<p>Orders over $100</p>
-				</div>
-				<!-- End Single Service -->
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="ti-reload"></i>
+					<p>Orders over 100€</p>
+				</figure>
+				
+				<figure class="single-service">
+					<img src="images/instagram.png" alt="#">
 					<h4>Free Return</h4>
 					<p>Within 30 days returns</p>
-				</div>
-				<!-- End Single Service -->
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="ti-lock"></i>
+				</figure>
+				
+				<figure class="single-service">
+					<img src="images/instagram.png" alt="#">
 					<h4>Sucure Payment</h4>
 					<p>100% secure payment</p>
-				</div>
-				<!-- End Single Service -->
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="ti-tag"></i>
-					<h4>Best Peice</h4>
-					<p>Guaranteed price</p>
-				</div>
-				<!-- End Single Service -->
+				</figure>
+				
 			</section>
 
-			<section class="shop-newsletter section">
+			<!-- Newsletter -->
+			<section class="newsletter">
 				<h4>Newsletter</h4>
-					<p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
-					<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-						<input name="EMAIL" placeholder="Your email address" required="" type="email">
+					<p> Subscribe to our newsletter and get 10% off your first purchase</p>
+					<form method="get">
+						<input type="email" name="EMAIL" placeholder="Your email address" required>
 						<button class="btn">Subscribe</button>
 					</form>
 			</section>
 
 		</main>
 
+		<!-- Footer -->
 		<footer class="footer">
-			<div class="logo">
-				<a href="index.html"><img src="images/logo2.png" alt="#"></a>
-			</div>
-			<p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue,  magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
-			<p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456 789</a></span></p>
-			<div class="single-footer links">
-				<h4>Information</h4>
+			<!-- Logo -->
+			<a href=#><img src="images/logo.png" alt="#">
+				<h1>Clothes Eshop</h1>
+			</a>
+			<p>This site is the first of its kind. It is an online shop <br>
+				selling digital cloth-wear for your virtual reality characters.<br>
+				It is compatible with Meta | Social Metaverse Company. <br>
+				It is the go to place if you want to find the latest <br>
+				fashion designs for your favorite VR characters.</p>
+			<p>Got Question? Call us 24/7 <a href="tel:030210600XXXX">+030 210 600 XXXX</a></p>
+			<h4>Information</h4>
 				<ul>
-					<li><a href="#">About Us</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+					<li><a href="#">Help</a></li>
 					<li><a href="#">Faq</a></li>
 					<li><a href="#">Terms & Conditions</a></li>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Help</a></li>
 				</ul>
-			</div>
-			<div class="single-footer links">
-				<h4>Customer Service</h4>
+			<h4>Customer Service</h4>
 				<ul>
 					<li><a href="#">Payment Methods</a></li>
 					<li><a href="#">Money-back</a></li>
@@ -348,29 +118,18 @@
 					<li><a href="#">Shipping</a></li>
 					<li><a href="#">Privacy Policy</a></li>
 				</ul>
-			</div>
-			<div class="single-footer social">
-				<h4>Get In Touch</h4>
-				<!-- Single Widget -->
-				<div class="contact">
-					<ul>
-						<li>NO. 342 - London Oxford Street.</li>
-						<li>012 United Kingdom.</li>
-						<li>info@eshop.com</li>
-						<li>+032 3456 7890</li>
-					</ul>
-				</div>
-				<!-- End Single Widget -->
+			<h4>Get In Touch</h4>
 				<ul>
-					<li><a href="#"><i class="ti-facebook"></i></a></li>
-					<li><a href="#"><i class="ti-twitter"></i></a></li>
-					<li><a href="#"><i class="ti-instagram"></i></a></li>
+					<li><address>Patision 76, PC 104 34, Athens</address></li>
+					<li><a href="mailto:info@clothesshop.com">info@clothesshop.com</a></li>
+					<li><a href="tel:030210600XXXX">+030 210 600 XXXX</a></li>
 				</ul>
-			</div>
-			<div class="left">
-				<p>Copyright © 2020 <a href="http://www.wpthemesgrid.com" target="_blank">Wpthemesgrid</a>  -  All Rights Reserved.</p>
-			</div>
-		
+				<ul>
+					<li><a href="#"><img src="images/instagram.png" alt="#"></a></li>
+					<li><a href="#"><img src="images/facebook.png" alt="#"></a></li>
+					<li><a href="#"><img src="images/twitter.png" alt="#"></a></li>
+				</ul>
+			<p>Copyright © 2022 - Vlachos Nikiforos p3170018 | Bakti Marianna p3190128 - All Rights Reserved.</p>
 		</footer>
 	</body>
 </html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title Tag  -->
+		<title>Clothes Eshop Home</title>
+		<!-- Meta Tag -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Favicon -->
+        <link rel="icon" type = "image/x-icon" href ="../images/favicon.png">
+		<!-- StyleSheet -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+	<body>
+		<!-- Index -->
+		<header class="index">
+			<a href="../index.html">Go to Index</a>
+		</header>
+
+		<header>
+			<!-- Logo -->
+			<section class="logo">
+				<a href="index.html">
+					<img src="../images/logo.png" alt="zipot sports wear brand logo">
+				</a>
+			</section>
+
+			<!-- Navigation Bar -->
+			<nav>
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li class="expand-categories"><a href="categories.html">Shop<svg class="down-arrow"><path d="M 3,-2 L13,8 L23,-2"></path></svg></a>
+
+						<!-- Dropdown List -->
+						<ul class="dropdown">
+							<li class="man"><a href="men.html">Men<svg class="right-arrow"><path d="M -2,2 L7,10 L-2,17"></path></svg></a>
+								<!-- Expanded List -->
+								<ul class="man-expanded">
+									<li><a href="#">Men's Tops</a></li>
+									<li><a href="#">Men's Trousers</a></li>
+									<li><a href="shoes.html">Men's Shoes</a></li>
+								</ul>
+							</li>
+
+							<li class="woman"><a href="women.html">Women<svg class="right-arrow"><path d="M -2,2 L7,10 L-2,17"></path></svg></a>
+								<!-- Expanded List -->
+								<ul class="woman-expanded">
+									<li><a href="#">Women's Tops</a></li>
+									<li><a href="#">Women's Trousers</a></li>
+									<li><a href="#">Women's Shoes</a></li>
+								</ul>
+							</li>
+
+							<li class="kids"><a href="kids.html">Kids<svg class="right-arrow"><path d="M -2,2 L7,10 L-2,17"></path></svg></a>
+								<!-- Expanded List -->
+								<ul class="kids-expanded">
+									<li><a href="#">Kids Tops</a></li>
+									<li><a href="#">Kids Trousers</a></li>
+									<li><a href="#">Kids Shoes</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li class="active-category"><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<!-- Search -->
+			<section class="search">
+				<form method="post">
+					<input type="search" name="search" placeholder="What are you looking for?" required>
+					<button class="solid-btn">Search</button>
+				</form>
+			</section>
+			
+		</header>
+		
+		<main>
+            
+			<section class="contact">
+				<h1>Contact us</h1>
+            	<p>Please do not hesitate to contact us if you have any questions or problems about our products and services.</p>
+
+				<form method="POST" action="#">
+					<fieldset>
+						<legend>Contact Form</legend>
+							<fieldset>
+								<legend> Your Personal Information</legend>
+
+								<label for="txt_name">Your full name:</label>
+								<input type="text" id="txt_name" name="user_name">
+
+								<label for="txt_email"> Your e-mail:</label>
+								<input type="email" id="txt_email" name="user_email">
+
+
+								<label for="txt_phone_number"> Your phone number:</label>
+								<input type="tel" id="txt_phone_number" name="user_phone_number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+								required min="1000000000" max="9999999999">
+
+							</fieldset>
+
+						<fieldset>
+							<legend> Products Information</legend>
+							
+							<label for="txt_product_key-code"> Product key-code:</label>
+							<input type="number" id="txt_product_key-code" name="product_key-code">
+							
+							<label for="txt_date-of-purchase"> Date of purchase:</label>
+							<input type="date" id="txt_date-of-purchase" name="product_date-of-purchase">
+							
+							<label for="product_receipt"> Product receipt:</label>
+							<input type="file" id="product_receipt" name="product_product-receipt">
+							
+							<label for="txt_textfield"> Your message:<br></label>
+							<textarea type="textarea" id="txt_textfield" name="user_text">Tell us what this is about</textarea>
+
+						</fieldset>
+						<br>
+						<button class="solid-btn" type="submit">Submit</button>
+
+					</fieldset>
+				</form>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			
+			<section>
+				
+				<section>
+					<h4>Information</h4>
+					<ul>
+						<li><a href="about-us.html">About Us</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Faq</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Customer Service</h4>
+					<ul>
+						<li><a href="#">Payment Methods</a></li>
+						<li><a href="#">Money-back</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h4>Get In Touch</h4>
+					<ul>
+						<li><address>Patision 76, PC 104 34, Athens</address></li>
+						<li><a href="mailto:info@clothesshop.com">info@clothesshop.com</a></li>
+						<li><a href="tel:030210600XXXX">+030 210 600 XXXX</a></li>
+					</ul>
+				</section>
+
+				<!-- Social -->
+				<section class="social">
+					<h4>Follow us on social</h4>
+					<ul>
+						<li><a href="#"><img src="../images/instagram.png" alt="instagram colorful logo"></a></li>
+						<li><a href="#"><img src="../images/facebook.png" alt="facebook dark blue logo"></a></li>
+						<li><a href="#"><img src="../images/twitter.png" alt="twitter light blue logo"></a></li>
+					</ul>
+				</section>
+
+			</section>
+			
+			<p>Copyright © 2022 - Vlachos Nikiforos p3170018 | Bakti Marianna p3190128 - All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>

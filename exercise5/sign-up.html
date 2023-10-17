@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title Tag  -->
+		<title>Clothes Eshop Home</title>
+		<!-- Meta Tag -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Favicon -->
+        <link rel="icon" type = "image/x-icon" href ="../images/favicon.png">
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+		<style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); </style>
+		<!-- StyleSheet -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="responcive.css">
+		<!-- Validation Script -->
+		<script type="text/javascript" src="validation.js"></script>
+	</head>
+
+	<body>
+		<!-- Index -->
+		<header class="index">
+			<a href="../index.html">Go to Index</a>
+		</header>
+
+		<header>
+			<!-- Logo -->
+			<section class="logo">
+				<a href="index.html">
+					<img srcset="../images/logo small.png 400w,
+					../images/logo tablet.png 800w,
+					../images/logo.png 1000w" alt="zipot sports wear brand logo">
+				</a>
+			</section>
+
+			<!-- Navigation Bar -->
+			<nav>
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li class="expand-categories"><a href="categories.html">Shop<svg class="down-arrow"><path d="M 3,-2 L13,8 L23,-2"></path></svg></a>
+
+						<!-- Dropdown List -->
+						<ul class="dropdown">
+							<li class="man"><a href="men.html">Men<svg class="right-arrow"><path d="M -2,2 L7,10 L-2,17"></path></svg></a>
+								<!-- Expanded List -->
+								<ul class="man-expanded">
+									<li><a href="#">Men's Tops</a></li>
+									<li><a href="#">Men's Trousers</a></li>
+									<li><a href="shoes.html">Men's Shoes</a></li>
+								</ul>
+							</li>
+
+							<li class="woman"><a href="women.html">Women<svg class="right-arrow"><path d="M -2,2 L7,10 L-2,17"></path></svg></a>
+								<!-- Expanded List -->
+								<ul class="woman-expanded">
+									<li><a href="#">Women's Tops</a></li>
+									<li><a href="#">Women's Trousers</a></li>
+									<li><a href="#">Women's Shoes</a></li>
+								</ul>
+							</li>
+
+							<li class="kids"><a href="kids.html">Kids<svg class="right-arrow"><path d="M -2,2 L7,10 L-2,17"></path></svg></a>
+								<!-- Expanded List -->
+								<ul class="kids-expanded">
+									<li><a href="#">Kids Tops</a></li>
+									<li><a href="#">Kids Trousers</a></li>
+									<li><a href="#">Kids Shoes</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<!-- Sign up -->
+			<a class="profile" href="sign-up.html"><img  src="../images/login.png"></a>
+
+			<!-- Search -->
+			<section class="search">
+				<form method="post">
+					<input type="search" name="search" placeholder="What are you looking for?" required>
+					<button class="solid-btn">Search</button>
+				</form>
+			</section>
+
+			
+			
+		</header>
+		
+		<main>
+            
+			<section class="contact sign-up">
+				<h1>Sign Up</h1>
+
+				<form method="POST" action="#">
+					<fieldset>
+						<legend>Sign Up Form</legend>
+							<fieldset>
+								<legend> Personal Information</legend>
+
+								<label for="txt_name">Your full name:</label>
+								<input  type="text" id="txt_name" name="user_name" placeholder="Name Surname" required enterkeyhint="next">
+
+								<label for="txt_email"> Your e-mail:</label>
+								<input  type="email" id="txt_email" name="user_email" placeholder="example@email.com" autocomplete="email" required enterkeyhint="next">
+
+                                <label for="txt_phone_number"> Your phone number:</label>
+								<input type="tel" id="txt_phone_number" name="user_phone_number" placeholder="698 030 XXXX" required enterkeyhint="next"
+                                pattern="[0-9]{3}[0-9]{3}[0-9]{4}" min="0000000000" max="9999999999" maxlength="13" autocomplete="tel" list="phone_numbers">
+
+                                <label for="birthday"> Date of birth:</label>
+                                <input type="date" id="birthday" name="user_birthday" required onchange="checkAge()">
+
+                                <label for="street-address">Street address</label>
+                                <input type="text" id="street-address" name="user_street-address" placeholder="ex. Patision 76" autocomplete="address-line1" required enterkeyhint="next">
+      
+                                <label for="postal-code">ZIP or postal code</label>
+                                <input type="text" id="postal-code" name="user_postal-code" placeholder="ex. 104 34" required enterkeyhint="next"
+                                pattern="[0-9]{3}[0-9]{2}" min="00000" max="99999" maxlength="5">
+
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="user_city" placeholder="ex. Athens" required autocomplete="address-level1" list="cities" enterkeyhint="next">
+
+                                <label for="country">Country or region</label>
+                                <select id="country" name="user_country" required enterkeyhint="next">
+                                    <option>Please Select One</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="BR">Brazil</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="CN">China</option>
+                                    <option value="GR">Greece</option>
+                                    <option value="MG">Madagascar</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="TZ">Tanzania</option>
+                                    <option value="TH">Thailand</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="US">United States</option>
+                                </select> 
+                            </fieldset>
+
+                            <fieldset>
+                                <legend> Payment Information</legend>
+
+                                <label for="txt_card_number"> Credit Card number:</label>
+                                <input type="tel" inputmode="numeric" id="txt_card_number" name="user_card_number" placeholder="XXXX XXXX XXXX XXXX" required enterkeyhint="next"
+                                pattern="[0-9\s]{13,19}" maxlength="19">
+
+                                <label for="txt_card_name">Name of credit card holder:<br><em>(as shown on card)</em></label>
+                                <input  type="text" id="txt_card_name" name="user_card_name" placeholder="N M SURNAME" required enterkeyhint="next">
+
+                                <label for="exp_date">Expiration Date:</label>
+                                <input type="month" id="exp_date" name="card_exp_date">
+
+                                <label for="txt_card_scode">Security code:</label>
+								<details>
+									<summary>What is that?</summary>
+									<p>Security code is a 3-digit number and you can find it on the back of your card.</p>
+								</details>
+                                <input type="text" inputmode="numeric" id="txt_card_scode" name="user_card_scode" placeholder="XXX" required enterkeyhint="next"
+                                pattern="[0-9]{3}" maxlength="3">
+
+                                <label for="txt_paypal">Paypal username</label>
+                                <input  type="text" id="txt_paypal" name="user_paypal" placeholder="@username" enterkeyhint="next">
+
+                                <label for="shipping-address">Shipping address</label>
+                                <input type="text" id="shipping-address" name="shipping-address" placeholder="ex. Patision 76" autocomplete="address-line2" enterkeyhint="next">
+    
+                                <label for="shipping-postal-code">Shipping P.C.</label>
+                                <input type="text" id="shipping-postal-code" name="shipping-postal-code" placeholder="ex. 104 34" enterkeyhint="next"
+                                pattern="[0-9]{5}" min="00000" max="99999" maxlength="5">
+
+                                <label for="shipping-city">Shipping City</label>
+                                <input type="shipping-text" id="shipping-city" name="shipping-city" placeholder="ex. Athens" autocomplete="address-level2" list="cities" enterkeyhint="next">
+
+                                <label for="shipping-country">Shipping Country or region</label>
+                                <select id="shipping-country" name="user_shipping-country" enterkeyhint="next">
+                                    <option>Please Select One</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="BR">Brazil</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="CN">China</option>
+                                    <option value="GR">Greece</option>
+                                    <option value="MG">Madagascar</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="TZ">Tanzania</option>
+                                    <option value="TH">Thailand</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="US">United States</option>
+                                </select>
+
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>User Information</legend>
+
+                                <label for="txt_username">Enter username</label>
+                                <input  type="text" id="txt_usernam" name="user_usernam" placeholder="@username" required enterkeyhint="next">
+
+                                <label for="password">Set password</label>
+                                <input  type="password" id="password" name="user_password" enterkeyhint="next" required minlength="8" maxlength="16" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,16}"
+								title="Password must contain at least one number, one uppercase, one lowercase letter, and be between 8 to 16 characters" onfocus="checkPassword()">
+
+								<div id="message">
+									<p>Password must contain the following:<p>
+									<p id="letter" class="invalid">A lowercase letter</p>
+									<p id="capital" class="invalid">A capital (uppercase) letter</p>
+									<p id="symbol" class="invalid">A sprecial character (!, @, #, $ ect)</p>
+									<p id="number" class="invalid">A number</p>
+									<p id="length" class="invalid">Minimum 8 characters and maximum 16 characters</p>
+								</div>
+								
+                                <label for="confirm_password">Confirm password</label>
+                                <input  type="password" id="confirm_password" name="user_password" enterkeyhint="next" required maxlength="25" onchange="matchingPasswords()">
+
+                                <div class="options">
+                                    <label for="subscribe">I want to receive promotional material:</label>
+                                    <input type="checkbox" id="subscribe" name="user_subscribe" required enterkeyhint="next">
+                                </div><br><br>
+
+                                <label for="sms_prf">If yes, which platform(s) do you prefer?</label>
+                                <div class="options">
+                                    <input type="checkbox" id="sms_prf" name="user_sms_prf" required enterkeyhint="next">
+                                    <label for="sms_prf">SMS</label>
+    
+                                    <input type="checkbox" id="email_prf" name="user_email_prf" required enterkeyhint="next">
+                                    <label for="email_prf">Email</label>
+                                    
+                                    <input type="checkbox" id="viber_prf" name="user_viber_prf" required enterkeyhint="next">
+                                    <label for="viber_prf">Viber</label>
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Quick Questions</legend>
+                                <label for="payment_prf">Which payment method you prefer the most?</label>
+                                <select id="payment_prf" name="user_payment_prf" enterkeyhint="next">
+                                    <option>Please Select One</option>
+                                    <option value="AR">Paypal</option>
+                                    <option value="BR">Credit card</option>
+                                    <option value="CA">Debit card</option>
+                                    <option value="CN">Cash</option>
+                                    <option value="GR">Pay on delivery</option>
+                                </select><br>
+                                <label for="shop_frq">How often do you shop online?</label>
+                                <input type="range" id="shop_frq" name="user_shop_frq" min="0" max="10" enterkeyhint="next">
+
+                                <label for="interest">In which category you are interested in?</label>
+                                <div class="options">
+                                    <input type="radio" id="man-intrst" name="user_man-intrst"enterkeyhint="next">
+                                    <label for="maninterest">Men</label>
+    
+                                    <input type="radio" id="woman-intrst" name="user_woman-intrst" enterkeyhint="next">
+                                    <label for="womaninterest">Women</label>
+    
+                                    <input type="radio" id="kid-intrst" name="user_kid-intrst" enterkeyhint="next">
+                                    <label for="kidsinterest">Kids</label>
+                                </div><br><br>
+
+                                <div class="options">
+                                    <label for="others">Do you shop for others?</label>
+                                    <input type="checkbox" id="shop_others" name="user_shop_others" enterkeyhint="next">
+                                </div><br><br>
+
+                                <label for="others_cont">If yes, what do you usually buy for them?</label>
+                                <textarea type="textarea" id="others_cont" name="user_others_cont" enterkeyhint="done"></textarea>
+                            </fieldset>
+
+                            <datalist id="phone_numbers">
+                                <option value="6932571500">6932571500</option>
+                                <option value="6982742675">6982742675</option>
+                                <option value="6947595634">6947595634</option>
+                            </datalist>
+
+                            <datalist id="cities">
+                                <option value="Athens">Athens</option>
+                                <option value="Patra">Patra</option>
+                                <option value="Crete">Crete</option>
+                            </datalist>
+
+						<br>
+						<button class="solid-btn" type="submit">Submit</button>
+                        <button class="outline-btn" type="reset">Reset</button>
+
+					</fieldset>
+				</form>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			
+			<section class="container">
+				
+				<section>
+					<h4>Information</h4>
+					<ul>
+						<li><a href="about-us.html">About Us</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Faq</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Customer Service</h4>
+					<ul>
+						<li><a href="#">Payment Methods</a></li>
+						<li><a href="#">Money-back</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h4>Get In Touch</h4>
+					<ul>
+						<li><address>Patision 76, PC 104 34, Athens</address></li>
+						<li><a href="mailto:info@clothesshop.com">info@clothesshop.com</a></li>
+						<li><a href="tel:030210600XXXX">+030 210 600 XXXX</a></li>
+					</ul>
+				</section>
+
+				<!-- Social -->
+				<section class="social">
+					<h4>Follow us on social</h4>
+					<ul>
+						<li><a href="#"><img src="../images/instagram.png" alt="instagram colorful logo"></a></li>
+						<li><a href="#"><img src="../images/facebook.png" alt="facebook dark blue logo"></a></li>
+						<li><a href="#"><img src="../images/twitter.png" alt="twitter light blue logo"></a></li>
+					</ul>
+				</section>
+
+			</section>
+			
+			<p>Copyright © 2022 - Vlachos Nikiforos p3170018 | Bakti Marianna p3190128 - All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>

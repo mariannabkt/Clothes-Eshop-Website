@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title Tag  -->
+		<title>Clothes Eshop Home</title>
+		<!-- Meta Tag -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Favicon -->
+        <link rel="icon" type = "image/x-icon" href ="../images/favicon.png">
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+		<style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); </style>
+		<!-- StyleSheet -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="responcive.css">
+	</head>
+
+	<body>
+		<!-- Index -->
+		<header class="index">
+			<a href="../index.html">Go to Index</a>
+		</header>
+
+		<header>
+			<!-- Logo -->
+			<section class="logo">
+				<a href="index.html">
+					<img srcset="../images/logo small.png 400w,
+					../images/logo tablet.png 800w,
+					../images/logo.png 1000w" alt="zipot sports wear brand logo">
+				</a>
+			</section>
+
+			<!-- Navigation Bar -->
+			<nav>
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li class="active-category expand-categories"><a href="categories.html">Shop<svg class="down-arrow"><path d="M 3,-2 L13,8 L23,-2"></path></svg></a>
+
+						<!-- Dropdown List -->
+						<ul class="dropdown">
+							<li class="man"><a href="men.html">Men<svg class="right-arrow"><path d="M -2,2 L7,10 L-2,17"></path></svg></a>
+								<!-- Expanded List -->
+								<ul class="man-expanded">
+									<li><a href="#">Men's Tops</a></li>
+									<li><a href="#">Men's Trousers</a></li>
+									<li><a href="shoes.html">Men's Shoes</a></li>
+								</ul>
+							</li>
+
+							<li class="woman"><a href="women.html">Women<svg class="right-arrow"><path d="M -2,2 L7,10 L-2,17"></path></svg></a>
+								<!-- Expanded List -->
+								<ul class="woman-expanded">
+									<li><a href="#">Women's Tops</a></li>
+									<li><a href="#">Women's Trousers</a></li>
+									<li><a href="#">Women's Shoes</a></li>
+								</ul>
+							</li>
+
+							<li class="kids"><a href="kids.html">Kids<svg class="right-arrow"><path d="M -2,2 L7,10 L-2,17"></path></svg></a>
+								<!-- Expanded List -->
+								<ul class="kids-expanded">
+									<li><a href="#">Kids Tops</a></li>
+									<li><a href="#">Kids Trousers</a></li>
+									<li><a href="#">Kids Shoes</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<!-- Search -->
+			<section class="search">
+				<form method="post">
+					<input type="search" name="search" placeholder="What are you looking for?" required>
+					<button class="solid-btn">Search</button>
+				</form>
+			</section>
+			
+		</header>
+
+
+		<main>
+			<section class="list-categories">
+				<h1>Shop Men</h1>
+				<img srcset="../images/men-banner-small.png 400w,
+					../images/men-banner-tablet.png 800w,
+					../images/men-banner.png 1000w">
+
+				<ul class="container">
+					<li>
+						<figure class="category">
+							<a href="#">
+							<img src="../images/men-tops.webp">
+							<figcaption>Man Tops</figcaption></a>
+						</figure>
+					</li>
+						
+					<li>
+						<figure class="category">
+							<a href="#">
+								<img srcset="../images/men-shorts-small.png 400w,
+								../images/men-shorts-tablet.png 800w,
+								../images/men-shorts.png 1000w">
+							<figcaption>Man Trousers</figcaption></a>
+						</figure>
+					</li>
+					
+					<li>
+						<figure class="category">
+							<a href="shoes.html">
+								<img srcset="../images/men-shoes-small.png 400w,
+								../images/men-shoes-tablet.png 800w,
+								../images/men-shoes.png 1000w">
+							<figcaption>Man Shoes</figcaption></a>
+						</figure>
+					</li>
+				</ul>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			
+			<section class="container">
+				
+				<section>
+					<h4>Information</h4>
+					<ul>
+						<li><a href="about-us.html">About Us</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Faq</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Customer Service</h4>
+					<ul>
+						<li><a href="#">Payment Methods</a></li>
+						<li><a href="#">Money-back</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h4>Get In Touch</h4>
+					<ul>
+						<li><address>Patision 76, PC 104 34, Athens</address></li>
+						<li><a href="mailto:info@clothesshop.com">info@clothesshop.com</a></li>
+						<li><a href="tel:030210600XXXX">+030 210 600 XXXX</a></li>
+					</ul>
+				</section>
+
+				<!-- Social -->
+				<section class="social">
+					<h4>Follow us on social</h4>
+					<ul>
+						<li><a href="#"><img src="../images/instagram.png" alt="instagram colorful logo"></a></li>
+						<li><a href="#"><img src="../images/facebook.png" alt="facebook dark blue logo"></a></li>
+						<li><a href="#"><img src="../images/twitter.png" alt="twitter light blue logo"></a></li>
+					</ul>
+				</section>
+
+			</section>
+			
+			<p>Copyright © 2022 - Vlachos Nikiforos p3170018 | Bakti Marianna p3190128 - All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>

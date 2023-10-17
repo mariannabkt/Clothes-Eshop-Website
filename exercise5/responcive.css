@@ -1,0 +1,166 @@
+@media screen and (max-width: 1000px){
+    header{
+        flex-direction: column;
+    }
+
+    .menu a {
+        font-size: 1em;
+    }
+    
+    .search{
+        margin-top: 10px;
+    }
+
+    .banner h1{
+        font-size: 2em;
+    }
+
+    .banner p{
+        font-size: 1em;
+    }
+
+    .categories img{
+        max-width:300px;
+    }
+
+    .footer{
+        width: 94%;
+        padding: 3%;
+    }
+
+    .footer section{
+        padding: 8px;
+    }
+
+    .contact {
+        padding: 10px 60px;
+    }
+
+    .list-categories > img {
+        top: -100px;
+    }
+
+    .list-categories h1{
+        font-size: 2em;
+        top: 150px;
+    }
+
+    .list-categories .container img{
+        width: 200px;
+    }
+
+    .products-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(600px, auto);
+    }
+
+    .product-page{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .related ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .gallery img{
+        max-width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    header{
+        flex-direction: column;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    .menu-title{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-title:hover + .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown{
+        position: static;
+    }
+
+    .banner p{
+        font-size: 1em;
+    }
+
+    .banner h1{
+        font-size: 1em;
+    }
+
+    .banner button{
+        font-size: 1em;
+    }
+
+    .banner img{
+        margin: 5% 0;
+    }
+
+    .outline-btn{
+        transform: scale(1); 
+    }
+    
+    .outline-btn:hover{ 
+        transform : scale(1.1);
+    }
+
+    .contact {
+        padding: 10px 30px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .list-categories > img {
+        top: -60px;
+    }
+
+    .list-categories h1{
+        font-size: 2em;
+        top: 100px;
+    }
+
+    .products-grid{
+        grid-template-columns: 1fr;
+
+    }
+
+    .gallery img{
+        max-width: 99%;
+    }
+
+    .product-page button{
+        margin-top: 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+   
+}
